@@ -1,0 +1,12 @@
+<html>
+<head>
+
+</head>
+<body>
+<ul>
+    {{ range $key, $value := .Data }}
+    <li><a href="http://{{ $.Host }}/u/{{ $key }}"><strong>{{ $key }}</strong></a> | <em>{{ $value }}</em></li>
+    {{ end }}
+</ul>
+</body>
+</html>
